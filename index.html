@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Template</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/mouse.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="head-content">
+    <div class="mnu-line">
+      <div class="container">
+        <div class="row">
+          <div class="first-menu">
+            <div class="col-md-2 col-sm-2 col-xs-2 fst-menu">
+              <img id="logo" style="max-width: 100%" src="img/logo.png" alt="">
+            </div>
+            <div class="col-md-4 days">
+              <h1><i class="fa fa-clock-o" aria-hidden="true"></i>Пн - Вс с 08:00 до 23:00</h1>
+            </div> 
+            <div class="col-md-3 phone">
+              <h1><i class="fa fa-phone" aria-hidden="true"></i>8(912)94-96-289</h1>
+            </div>    
+          </div>
+          <a href="#" class="toggle-mnu hidden-lg"><span></span></a>
+          <h2 class="text-logo">Мой компьютер</h2>
+          <div class="second-menu">
+            <ul class="mnu-second">
+              <li><a href="">преимущества</a></li>
+              <li><a href="">услуги</a></li>
+              <li><a href="">цены</a></li>
+              <li><a href="">этапы работы</a></li>
+              <li><a href="">наши клиенты</a></li>
+              <li><a href="">гарантии</a></li>
+              <li><a href="">контакты</a></li>
+            </ul>  
+            <img class="phone-menu" src="img/phone.png" alt="">
+          </div>
+           <div class="second-menu-toggle">
+            <ul class="mnu-second">
+              <li><a href="">преимущества</a></li>
+              <li><a href="">услуги</a></li>
+              <li><a href="">цены</a></li>
+              <li><a href="">этапы работы</a></li>
+              <li><a href="">наши клиенты</a></li>
+              <li><a href="">гарантии</a></li>
+              <li><a href="">контакты</a></li>
+            </ul>  
+            <img class="phone-menu-toggle" src="img/phone.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bg-mnu"></div>
+    <div style="position: relative;" class="container">
+      <div class="row">
+       <img class="col-md-1 acs" src="img/2-layers.png" alt="">
+     </div>
+   </div>
+   <div class="preim-head">
+    <div class="container">
+     <div class="row">
+       <div class="col-md-7">
+        <h1>компьютерный сервис номер 1</h1>
+        <span>самый быстрый ремонт компьютеров в  республике Коми</span>
+        <ul>
+          <li><i class="fa fa-desktop" aria-hidden="true"></i>Установка Windows</li>
+          <li><i class="fa fa-desktop" aria-hidden="true"></i>Подбор комплектующих</li>
+          <li><i class="fa fa-desktop" aria-hidden="true"></i>Блочный ремонт</li>
+          <li><i class="fa fa-desktop" aria-hidden="true"></i>Чистка системы и удаление вредоносного ПО </li>
+          <li><i class="fa fa-desktop" aria-hidden="true"></i>Настройка WiFi роутера</li>
+          <a class="more" href="#">узнать больше</a>
+        </ul>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="ajax-form">
+          <h3>Не включается компьютер?</h3>
+          <p>Заполните форму и <br> получите бесплатную консультацию</p>
+          <form style="position: relative;">
+            <ul class="input-icon">
+              <li><i class="fa fa-phone" aria-hidden="true"></i></li>
+              <li><i class="fa fa-user" aria-hidden="true"></i></li>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+            </ul>
+            <input id="name" type="text" placeholder="Ваше имя"><br>       
+            <input id="phone" type="text" placeholder="Номер телефона"><br>
+            <input id="e-mail" type="text" placeholder="Email"><br>
+            <button class="submit-btn">получить консультацию</button><br>
+            <p><i class="fa fa-lock" aria-hidden="true"></i> Ваши данные защищены</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mouse-icon"><div class="wheel"></div></div>
+</div>
+<section class="prem">
+  <h1>преимущества работы с нами</h1>
+</section>    
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+  $(".toggle-mnu").click(function() {
+    $(this).toggleClass("on");
+    $(".main-mnu").slideToggle();
+    return false;
+  });
+</script>
+<script>
+var elementHeight = $('#logo').outerHeight(true);
+$('<div class="clone-nav"></div>').insertBefore('.first-menu').css('height', elementHeight).hide();
+  $(window).scroll(function(){
+    var topRange = $(window).scrollTop();
+    
+    console.log(topRange);
+    console.log(elementHeight);
+    
+    if (topRange >= 53){
+    $('.first-menu').css('transform', 'translateY(-70px)');
+    $('.first-menu').css({
+      'position': 'relative',
+      'top': '0',
+      'opacity': '0'
+    });
+    $('.second-menu').fadeIn();
+    $('.second-menu').addClass('active-menu');
+    $('.text-logo').fadeIn();
+    $('.text-logo').css('position', 'fixed');
+    // $('.bg-mnu').fadeIn(900);
+    $('.bg-mnu').css({
+      'position': 'fixed',
+      'opacity': '0.4',
+      'z-index': '99',
+      'display': 'block'
+    });
+    $('.clone-nav').show();
+
+  } else {
+    $('.first-menu').show();
+    $('#logo').fadeIn(1700);
+    $('.second-menu').fadeOut();
+    $('.text-logo').fadeOut();
+    $('.bg-mnu').fadeOut();
+    $('.clone-nav').hide();
+    $('.first-menu').css('transform', 'translateY(10px)');
+    $('.first-menu').css({
+      'position': 'static',
+      'top': '0',
+      'opacity': '1'
+    });
+  }
+  });
+    
+  $('.text-logo').hide();
+  $('.bg-mnu').hide();
+  
+  $('.second-menu').hide();
+  $('.toggle-mnu').click(function(){
+     $('.second-menu-toggle').slideToggle();
+  });
+</script>
+</body>
+</html>
