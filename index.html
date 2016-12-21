@@ -126,8 +126,11 @@
   });
 </script>
 <script>
-var elementHeight = $('#logo').outerHeight(true);
+var winWith = $(window).width();
+if (winWith >= 991) {
+  var elementHeight = $('#logo').outerHeight(true);
 $('<div class="clone-nav"></div>').insertBefore('.first-menu').css('height', elementHeight).hide();
+
   $(window).scroll(function(){
     var topRange = $(window).scrollTop();
     
@@ -169,6 +172,8 @@ $('<div class="clone-nav"></div>').insertBefore('.first-menu').css('height', ele
     });
   }
   });
+}
+
     
   $('.text-logo').hide();
   $('.bg-mnu').hide();
