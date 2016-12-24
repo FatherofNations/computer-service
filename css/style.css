@@ -672,6 +672,8 @@ body {
     display: none !important; } }
 
 @media screen and (max-width: 991px) {
+  .second-menu {
+    display: none; }
   .section-end > span {
     line-height: 40px; }
   .footer {
