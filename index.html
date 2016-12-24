@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/owl.theme.default.css">
   <link rel="stylesheet" href="css/flipclock.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
+
 </head>
 <body>
 
@@ -34,7 +35,7 @@
               <h1><i class="fa fa-phone" aria-hidden="true"></i>8(912)94-96-289</h1>
             </div>    
           </div>
-          <a href="#" class="toggle-mnu hidden-lg"><span></span></a>
+          <div class="toggle-mnu hidden-lg"><span></span></div>
           <h2 class="text-logo">Мой компьютер</h2>
           <h2 class="text-logo-1">Мой компьютер</h2>
           <div class="second-menu">
@@ -69,10 +70,12 @@
     <div class="bg-mnu-1"></div>
     <div style="position: relative;" class="container">
       <div class="row">
-       <img class="col-md-1 acs" src="img/2-layers.png" alt="">
-     </div>
-   </div>
-   <div class="preim-head">
+       <a class="link" href="#timer">
+        <img class="col-md-1 acs" src="img/2-layers.png" alt="">
+      </a>
+    </div>
+  </div>
+  <div class="preim-head">
     <div class="container">
      <div class="row">
        <div class="col-md-7">
@@ -84,7 +87,7 @@
           <li><i class="fa fa-desktop" aria-hidden="true"></i>Блочный ремонт</li>
           <li><i class="fa fa-desktop" aria-hidden="true"></i>Чистка системы и удаление вредоносного ПО </li>
           <li><i class="fa fa-desktop" aria-hidden="true"></i>Настройка WiFi роутера</li>
-          <a class="more" href="#">узнать больше</a>
+          <a class="more link" href="#ysl">узнать больше</a>
         </ul>
       </div>
       <div class="col-md-5 col-sm-12">
@@ -164,7 +167,7 @@
             <h1>Оставьте заявку на консультацию прямо сейчас <br>
               и получите диагностику вашего компьютера <b>БЕСПЛАТНО</b> </h1>
               <a class="zayav popup-with-zoom-anim" href="#popup">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
-              <h2>услуги нашего сервиса</h2>
+              <h2 id="ysl">услуги нашего сервиса</h2>
               <div class="service-content">
                 <div class="container">
                   <div class="row">
@@ -233,7 +236,7 @@
                                 <a class="zayav zayav-end popup-with-zoom-anim" href="#popup">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
                                 <h1 id="price" class="categories-log">стоимость наиболее популярных услуг нашего центра</h1>
 
-                                <div class="container" style="position: relative;"><img class="col-md-1 acs-2" src="img/2-layers.png" alt=""></div>
+                                <div class="container" style="position: relative;"><a class="link" href="#timer"><img class="col-md-1 acs-2" src="img/2-layers.png" alt=""></a></div>
 
                                 <div class="row">
                                   <div style="display: flex; justify-content: center;" class="col-md-4 col-xs-12 stalin">
@@ -323,7 +326,7 @@
 
                               <section id="work" class="work">
                                <h3>как мы работаем</h3>
-                               <div style="position: relative;" class="container"><img class="acs-3" src="img/2-layers.png" alt=""></div>
+                               <div style="position: relative;" class="container"><a class="link" href="#timer"><img class="acs-3" src="img/2-layers.png" alt=""></a></div>
                                <div style="text-align: center; padding-bottom: 80px" class="container">
                                  <div class="row">
                                   <div class="col-md-4">
@@ -400,7 +403,7 @@
                                 </div>
                               </section>    
 
-                              <section class="ny">
+                              <section id="timer" class="ny">
                                 <div class="container ss">
                                   <div class="row">
                                     <div class="col-md-7">
@@ -436,16 +439,53 @@
                                  <p>Мы гарантируем наивысшее качество своей работы, но подобные гарантии дают все. Поэтому мы делаем очень просто: <br> если нашим клиентам в течении двух недель что то не понравится или обнаружится какой либо недочёт, мы всё устраним в <br> кратчайшие сроки и вернём полностью уплаченную за ремонт сумму!</p>
                                  <a class="zayav popup-with-zoom-anim" href="#popup">ОСТАВИТЬ ЗАЯВКУ</a>
                                  <div style="height: 50px" class="free"></div>
-                               </section>     
+                               </section>  
 
-                               <section class="footer">
+
+                               <div id="map" style="width: 100%; height: 100%;">
+                                 <script src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=lhwMDh-nL0uvJ1RUIqfhpuJdPT1l8zyT&width=100%2525&height=680&lang=ru_RU&sourceType=constructor&scroll=true%22%3E%3C/script"></script>
+                                 <div class="map-wrap">
+                                   <div class="ajax-form ajax-map">
+
+                                     <div style="height: 20px"></div>
+                                     <h3>Остались вопросы?</h3>
+                                     <p>Мы с удовольствием на них ответим!</p>
+                                     <form style="position: relative;">
+                                      <ul class="input-icon">
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                                      </ul>
+                                      <input id="name" type="text" placeholder="Ваше имя"><br>       
+                                      <input id="phone" type="text" placeholder="Номер телефона"><br>
+                                      <input id="e-mail" type="text" placeholder="Email"><br>
+                                      <button class="submit-btn">получить консультацию</button><br>
+                                      <p><i class="fa fa-lock" aria-hidden="true"></i> Ваши данные защищены</p>
+                                      <div style="height: 70px"></div>
+                                    </form>
+                                  </div>
+                                  <div class="cont">
+                                    <p><span>наш адрес:</span>
+
+                                    г Ухта, ул Бушуева д. 1</p>
+                                    <p><i class="fa fa-envelope" aria-hidden="true"></i> support@service-uhta.ru</p>
+                                    <p><i class="fa fa-phone" aria-hidden="true"></i> 8(8216)71-19-50   8(904)209-19-50
+                                    </p>
+                                  </div>
+                                  </div>
+                                </div>
+                                
+                                
+                                <div  style="width: 100%; height: 470px"></div>
+
+                                <section class="footer">
                                  <div class="container">
                                    <img src="img/logo.png" alt="">
                                    <h3>2016. Компьютерный сервис №1.Все права защищены</h3>
                                    <h3>мы в соцсетях</h3>
                                    <i  style="color: #3541BA" class="fa fa-vk" aria-hidden="true"></i>
                                    <i style="color: #ff8606" class="fa fa-odnoklassniki-square" aria-hidden="true"></i>
-                                   <a class="link" href="#home"><img id="top" src="img/totop.png" alt=""></a>
+                                   <a class="link" href="#home"><img class="link" id="top" src="img/totop.png" alt=""></a>
                                  </div>
                                </section>
 
@@ -475,18 +515,19 @@
                               <script src="js/owl.carousel.js"></script>
                               <script src="js/flipclock.min.js"></script> 
                               <script src="js/jquery.magnific-popup.min.js"></script>
+                              <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript">
+                                <script>
+                                 $("a.link").click(function() {
+                                  $("html, body").animate({
+                                   scrollTop: $($(this).attr("href")).offset().top + "px"
+                                 }, {
+                                   duration: 500,
+                                   easing: "swing"
+                                 });
+                                  return false;
+                                });
+                              </script> 
                               <script>
-                               $("a.link").click(function() {
-                                $("html, body").animate({
-                                 scrollTop: $($(this).attr("href")).offset().top + "px"
-                               }, {
-                                 duration: 500,
-                                 easing: "swing"
-                               });
-                                return false;
-                              });
-                            </script> 
-                            <script>
                                $('.popup-with-zoom-anim').magnificPopup({
                                 type: 'inline',
 
@@ -540,17 +581,22 @@
                           </script>
                           <script>
 
-                             var winWith;
+                           var winWith;
                            function refresh() {
- 
+
                              winWith = $(window).width();
+                             var dt = "January 4 2017 23:59:59";
+                             var first = new Date(dt);
+                             var last = Date.now();
+                             var remeaning = first - last;
+                             remeaning /= 1000;
                              if (winWith >= 550){
                                var clock;
                                clock = $(".timer").FlipClock({
                                  clockFace: "DailyCounter",
                                  autoStart: true
                                });
- 
+
                              } else {
                                var clock;
                                clock = $(".timer").FlipClock({
@@ -558,9 +604,11 @@
                                  autoStart: true,
                                  showSeconds: false
                                });
- 
+
                              }
-                           clock.start();
+                             clock.setTime(remeaning);
+                             clock.setCountdown(true);   
+                             clock.start();
                             // console.log(winWith);
                             if (winWith >= 991) {
                               var elementHeight = $('#logo').outerHeight(true);

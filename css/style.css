@@ -620,7 +620,59 @@ body {
     font-size: 1.4em;
     padding-bottom: 30px; }
 
+#map {
+  height: 200px !important;
+  position: relative; }
+
+.ajax-map {
+  position: absolute;
+  background-color: black;
+  top: 50px;
+  right: 0;
+  left: 0;
+  color: #fff;
+  float: none;
+  margin: 0 auto; }
+  .ajax-map h3 {
+    font-size: 1em; }
+  .ajax-map ul {
+    list-style: none; }
+    .ajax-map ul li {
+      padding-bottom: 30px; }
+  .ajax-map .input-icon {
+    top: 15px;
+    right: 40px;
+    font-size: 1.1em; }
+
+.map-wrap {
+  height: 680px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 280px;
+  color: #fff;
+  width: 460px; }
+  .map-wrap span {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    padding-right: 5px; }
+
+.cont {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  float: none;
+  text-align: center; }
+  .cont i {
+    color: #ff8606;
+    padding-right: 10px;
+    font-size: 1em; }
+
 @media screen and (max-width: 1200px) {
+  .map-wrap {
+    right: 0 !important; }
   .footer {
     background-color: #000;
     color: #fff; }
@@ -658,6 +710,8 @@ body {
     display: none; } }
 
 @media screen and (min-width: 991px) {
+  .preim-head {
+    padding-top: 150px; }
   .text-logo {
     display: none; }
   .bg-mnu {
@@ -672,6 +726,10 @@ body {
     display: none !important; } }
 
 @media screen and (max-width: 991px) {
+  .bg-mnu {
+    display: none; }
+  .text-logo {
+    display: none; }
   .second-menu {
     display: none; }
   .section-end > span {
@@ -721,13 +779,13 @@ body {
     color: white;
     margin: 0;
     font-size: 1.5em;
-    top: 40px;
+    top: 20px;
     margin-left: 15px;
     z-index: 999;
     display: block; }
   .bg-mnu-1 {
     background-color: #000;
-    height: 100px;
+    height: 60px !important;
     width: 100%;
     position: fixed;
     opacity: 0.2;
@@ -745,6 +803,7 @@ body {
     max-width: 100%;
     right: 0;
     left: 0;
+    top: 50px;
     margin-top: 65px;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 999; }
@@ -756,7 +815,7 @@ body {
   .toggle-mnu {
     display: block;
     right: 20px;
-    top: 42px;
+    top: 23px;
     position: fixed;
     z-index: 99999; }
   .second-menu {
@@ -855,6 +914,14 @@ body {
       top: 10px; } }
 
 @media screen and (max-width: 450px) {
+  .map-wrap {
+    width: 100%; }
+  .ajax-map .input-icon {
+    right: 25px !important; }
+  .input-icon {
+    top: 15px;
+    right: 40px;
+    font-size: 1.1em; }
   .icon-popup {
     position: absolute;
     top: 15px;
