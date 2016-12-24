@@ -24,13 +24,13 @@
   .owl-theme .owl-nav .owl-next {
     position: absolute;
     top: 40%;
-    right: 0;
+    right: -20px;
     left: auto;
   }
     .owl-theme .owl-nav .owl-prev {
       position: absolute;
       top: 40%;
-      left: 0px;
+      left: -20px;
       right: auto;
   }
   .owl-theme .owl-nav .disabled {
