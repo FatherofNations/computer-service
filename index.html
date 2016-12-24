@@ -163,7 +163,7 @@
           <section id="service" class="service">
             <h1>Оставьте заявку на консультацию прямо сейчас <br>
               и получите диагностику вашего компьютера <b>БЕСПЛАТНО</b> </h1>
-              <a class="zayav" href="#">ОСТАВИТЬ ЗАЯВКУ</a>
+              <a class="zayav popup-with-zoom-anim" href="#popup">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
               <h2>услуги нашего сервиса</h2>
               <div class="service-content">
                 <div class="container">
@@ -230,7 +230,7 @@
                               </div>
                               <h1 class="service-end">Не уверены, к какой категории отнести неисправность, возникшую у вас? <br>
                                 Получите консультацию наших специалистов абсолютно <b>БЕСПЛАТНО</b></h1>
-                                <a class="zayav zayav-end" href="#">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+                                <a class="zayav zayav-end popup-with-zoom-anim" href="#popup">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
                                 <h1 id="price" class="categories-log">стоимость наиболее популярных услуг нашего центра</h1>
 
                                 <div class="container" style="position: relative;"><img class="col-md-1 acs-2" src="img/2-layers.png" alt=""></div>
@@ -315,7 +315,7 @@
                                       Свяжитесь с нами и наши специалисты в кратчайшие сроки определят причину проблемы <br>
                                       и помогут в ее решении</h1>
                                     </div>
-                                    <a class="zayav last" style="margin-bottom: 50px" href="#">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+                                    <a class="zayav last popup-with-zoom-anim" style="margin-bottom: 50px" href="#popup">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
                                     <div style="height: 60px"></div>
                                   </div>
                                 </div>
@@ -351,7 +351,7 @@
                             <section class="home">
                              <h1>хотите вызвать мастера на дом?</h1>
                              <p>получите консультацию по вашей проблеме и мастер приедет через час</p>
-                             <a class="zayav zayav-end" href="#">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+                             <a class="zayav zayav-end popup-with-zoom-anim" href="#popup">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
                              <div style="height: 60px" class="free"></div>
                            </section>
                            <section id="clients" class="talk">
@@ -452,22 +452,22 @@
 
                                
                                <div id="popup" class="ajax-form ajax-popup oom-anim-dialog mfp-hide">
-                                  <h3>Не включается компьютер?</h3>
-                                  <p>Заполните форму и <br> получите бесплатную консультацию</p>
-                                  <form style="position: relative;">
-                                    <ul class="input-icon icon-popup">
-                                      <li><i class="fa fa-phone" aria-hidden="true"></i></li>
-                                      <li><i class="fa fa-user" aria-hidden="true"></i></li>
-                                      <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
-                                    </ul>
-                                    <input id="name" type="text" placeholder="Ваше имя"><br>       
-                                    <input id="phone" type="text" placeholder="Номер телефона"><br>
-                                    <input id="e-mail" type="text" placeholder="Email"><br>
-                                    <button class="submit-btn">получить консультацию</button><br>
-                                    <p class="last-guard"><i class="fa fa-lock" aria-hidden="true"></i> Ваши данные защищены</p>
-                                  </form>
-                                </div>
-                             
+                                <h3>Не включается компьютер?</h3>
+                                <p>Заполните форму и <br> получите бесплатную консультацию</p>
+                                <form style="position: relative;">
+                                  <ul class="input-icon icon-popup">
+                                    <li><i class="fa fa-phone" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                                    <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                                  </ul>
+                                  <input id="name" type="text" placeholder="Ваше имя"><br>       
+                                  <input id="phone" type="text" placeholder="Номер телефона"><br>
+                                  <input id="e-mail" type="text" placeholder="Email"><br>
+                                  <button class="submit-btn">получить консультацию</button><br>
+                                  <p class="last-guard"><i class="fa fa-lock" aria-hidden="true"></i> Ваши данные защищены</p>
+                                </form>
+                              </div>
+
 
                               <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
                               <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script><!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -487,69 +487,80 @@
                               });
                             </script> 
                             <script>
-                             var clock;
-                             clock = $(".timer").FlipClock({
-                              clockFace: "DailyCounter",
-                              autoStart: true
-                            });
-                             clock.start();
-                           </script>
-                           <script>
-                             $('.popup-with-zoom-anim').magnificPopup({
-                              type: 'inline',
+                               $('.popup-with-zoom-anim').magnificPopup({
+                                type: 'inline',
 
-                              fixedContentPos: false,
-                              fixedBgPos: true,
+                                fixedContentPos: false,
+                                fixedBgPos: true,
 
-                              overflowY: 'auto',
+                                overflowY: 'auto',
 
-                              closeBtnInside: true,
-                              preloader: false,
+                                closeBtnInside: true,
+                                preloader: false,
 
-                              midClick: true,
-                              removalDelay: 300,
-                              mainClass: 'my-mfp-zoom-in'
-                            });
+                                midClick: true,
+                                removalDelay: 300,
+                                mainClass: 'my-mfp-zoom-in'
+                              });
 
-                             $('.popup-with-move-anim').magnificPopup({
-                              type: 'inline',
+                               $('.popup-with-move-anim').magnificPopup({
+                                type: 'inline',
 
-                              fixedContentPos: false,
-                              fixedBgPos: true,
+                                fixedContentPos: false,
+                                fixedBgPos: true,
 
-                              overflowY: 'auto',
+                                overflowY: 'auto',
 
-                              closeBtnInside: true,
-                              preloader: false,
+                                closeBtnInside: true,
+                                preloader: false,
 
-                              midClick: true,
-                              removalDelay: 300,
-                              mainClass: 'my-mfp-slide-bottom'
-                            });
+                                midClick: true,
+                                removalDelay: 300,
+                                mainClass: 'my-mfp-slide-bottom'
+                              });
+                            </script>
+                            <script>
+                             $('.owl-carousel').owlCarousel({
+                              loop:true,
+                              margin:10,
+                              navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right slide" aria-hidden="true"></i>'],
+                              nav:true,
+                              responsive:{
+                                0:{
+                                  items:1
+                                },
+                                600:{
+                                  items:1
+                                },
+                                1000:{
+                                  items:2
+                                }
+                              }
+                            })
                           </script>
                           <script>
-                           $('.owl-carousel').owlCarousel({
-                            loop:true,
-                            margin:10,
-                            navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right slide" aria-hidden="true"></i>'],
-                            nav:true,
-                            responsive:{
-                              0:{
-                                items:1
-                              },
-                              600:{
-                                items:1
-                              },
-                              1000:{
-                                items:2
-                              }
-                            }
-                          })
-                        </script>
-                         <script>
-                              var winWith;
-                              function refresh() {
-                                winWith = $(window).width();
+
+                             var winWith;
+                           function refresh() {
+ 
+                             winWith = $(window).width();
+                             if (winWith >= 550){
+                               var clock;
+                               clock = $(".timer").FlipClock({
+                                 clockFace: "DailyCounter",
+                                 autoStart: true
+                               });
+ 
+                             } else {
+                               var clock;
+                               clock = $(".timer").FlipClock({
+                                 clockFace: "DailyCounter",
+                                 autoStart: true,
+                                 showSeconds: false
+                               });
+ 
+                             }
+                           clock.start();
                             // console.log(winWith);
                             if (winWith >= 991) {
                               var elementHeight = $('#logo').outerHeight(true);
@@ -608,27 +619,27 @@
                             var topRange = $(window).scrollTop();  
                             if (topRange >= 53 && winWith >= 991 ){
                               $('.first-menu').css('transform', 'translateY(-60px)');
-                                  $('.first-menu').animate({
-                                    'position': 'relative',
-                                    'top': '0',
-                                    'opacity': '0',
-                                    'left': '102px'
-                                  }, 100);
-                                  $('.second-menu').fadeIn();
-                                  $('.second-menu').addClass('active-menu');
-                                  $('.text-logo').fadeIn();
-                                  $('.text-logo').css('position', 'fixed');
-                                  $('#logo').animate({
-                                    "width": "90px",
-                                    "left": "35px"
-                                  }, 100);
-                                  $('.bg-mnu').css({
-                                    'position': 'fixed',
-                                    'opacity': '0.4',
-                                    'z-index': '99',
-                                    'display': 'block'
-                                  });
-                                  $('.clone-nav').show();
+                              $('.first-menu').animate({
+                                'position': 'relative',
+                                'top': '0',
+                                'opacity': '0',
+                                'left': '102px'
+                              }, 100);
+                              $('.second-menu').fadeIn();
+                              $('.second-menu').addClass('active-menu');
+                              $('.text-logo').fadeIn();
+                              $('.text-logo').css('position', 'fixed');
+                              $('#logo').animate({
+                                "width": "90px",
+                                "left": "35px"
+                              }, 100);
+                              $('.bg-mnu').css({
+                                'position': 'fixed',
+                                'opacity': '0.4',
+                                'z-index': '99',
+                                'display': 'block'
+                              });
+                              $('.clone-nav').show();
                             } else if (winWith <= 991 && topRange >= 0) {
                               $('.first-menu').hide();
                               $('.second-menu').hide();
@@ -637,9 +648,9 @@
                               // $('.first-menu').show();
                               $('#logo').fadeIn(1700);
                               $('#logo').animate({
-                                    "width": "112px",
-                                    "left": "0"
-                                  }, 100);
+                                "width": "112px",
+                                "left": "0"
+                              }, 100);
                               $('.second-menu').fadeOut();
                               $('.text-logo').fadeOut();
                               $('.bg-mnu').fadeOut();
@@ -661,36 +672,36 @@
                               var topRange = $(window).scrollTop();  
                               if (topRange >= 53 && winWith >= 991 ){
                                $('.first-menu').css('transform', 'translateY(-60px)');
-                                  $('.first-menu').animate({
-                                    'position': 'relative',
-                                    'top': '0',
-                                    'opacity': '0',
-                                    'left': '102px'
-                                  }, 100);
-                                  $('.second-menu').fadeIn();
-                                  $('.second-menu').addClass('active-menu');
-                                  $('.text-logo').fadeIn();
-                                  $('.text-logo').css('position', 'fixed');
-                                  $('#logo').animate({
-                                    "width": "90px",
-                                    "left": "35px"
-                                  }, 100);
-                                  $('.bg-mnu').css({
-                                    'position': 'fixed',
-                                    'opacity': '0.4',
-                                    'z-index': '99',
-                                    'display': 'block'
-                                  });
-                                  $('.clone-nav').show();
-                              } else {
-                              
-                                $('#logo').fadeIn(1700);
-                                $('#logo').animate({
-                                    "width": "112px",
-                                    "left": "0"
-                                  }, 100);
-                                $('.second-menu').fadeOut();
-                                $('.text-logo').fadeOut();
+                               $('.first-menu').animate({
+                                'position': 'relative',
+                                'top': '0',
+                                'opacity': '0',
+                                'left': '102px'
+                              }, 100);
+                               $('.second-menu').fadeIn();
+                               $('.second-menu').addClass('active-menu');
+                               $('.text-logo').fadeIn();
+                               $('.text-logo').css('position', 'fixed');
+                               $('#logo').animate({
+                                "width": "90px",
+                                "left": "35px"
+                              }, 100);
+                               $('.bg-mnu').css({
+                                'position': 'fixed',
+                                'opacity': '0.4',
+                                'z-index': '99',
+                                'display': 'block'
+                              });
+                               $('.clone-nav').show();
+                             } else {
+
+                              $('#logo').fadeIn(1700);
+                              $('#logo').animate({
+                                "width": "112px",
+                                "left": "0"
+                              }, 100);
+                              $('.second-menu').fadeOut();
+                              $('.text-logo').fadeOut();
                                 // $('.bg-mnu').fadeOut();
                                 $('.clone-nav').hide();
                                 $('.first-menu').css('transform', 'translateY(10px)');
